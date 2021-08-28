@@ -2028,7 +2028,7 @@ eval("\nconst { ipcMain } = __webpack_require__(/*! electron */ \"electron\");\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n//@ts-ignore\nconst ws = __webpack_require__(/*! ws */ \"./node_modules/ws/index.js\");\n//@ts-ignore\nlet wss;\nmodule.exports = () => {\n    if (wss) {\n        return;\n    }\n    wss = new ws.WebSocketServer({ port: 9999 });\n    //@ts-ignore\n    wss.on('connection', function connection(ws) {\n        //@ts-ignore\n        ws.on('message', function incoming(message) {\n            console.log('received: %s', message);\n        });\n        ws.send('something');\n    });\n};\n\n\n//# sourceURL=webpack:///./src/main/ws.ts?");
+eval("\n//@ts-ignore\nconst ws = __webpack_require__(/*! ws */ \"./node_modules/ws/index.js\");\n//@ts-ignore\nlet wss;\nmodule.exports = () => {\n    console.log(wss);\n    if (wss) {\n        return;\n    }\n    wss = new ws.WebSocketServer({ port: 9999 });\n    //@ts-ignore\n    wss.on('connection', function connection(ws) {\n        //@ts-ignore\n        ws.on('message', function incoming(message) {\n            console.log('received: %s', message);\n        });\n        ws.send('something');\n    });\n};\n\n\n//# sourceURL=webpack:///./src/main/ws.ts?");
 
 /***/ }),
 

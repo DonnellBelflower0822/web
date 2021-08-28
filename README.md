@@ -4,6 +4,8 @@
 - <a href='https://juejin.cn/post/6844903701082013710#heading-22'>promise控制并发</a>
 - <a href='https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch'>fetch</a>
 
+- 正则网站: https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24
+
 vue
 ● api熟悉
 ● vue测试
